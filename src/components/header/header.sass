@@ -1,0 +1,59 @@
+nav
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 17px
+	letter-spacing: 0.03em
+	color: $black
+	ul
+		li
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			a
+				color: $black !important
+		& > a
+			font-style: normal
+			font-weight: bold
+			font-size: 24px
+			line-height: 29px
+			letter-spacing: 0.05em
+			text-transform: uppercase
+			color: $black !important
+	.navbar-brand
+		img
+			margin-right: 20px
+	.basket
+		li
+			a
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: center
+				.counter
+					margin-top: 7px
+					display: block
+					width: 33px
+					height: 15px
+					background: $beige
+					position: relative
+					margin-left: 27px
+					font-style: normal
+					font-weight: bold
+					font-size: 12px
+					line-height: 15px
+					text-align: center
+					color: #FFFFFF
+					&:before
+						position: absolute
+						left: -24px
+						display: block
+						content: ''
+						border: 7.5px solid transparent
+						border-left: 12px solid transparent
+						border-right: 12px solid $beige

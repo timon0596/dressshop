@@ -1,0 +1,44 @@
+nav.navbar.navbar-expand-xl.navbar-light.bg-light
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.row.w-100
+      .col-4.d-flex
+        li.nav-item.dropdown
+          a#navbarDropdownMale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            | Для мужчин
+          .dropdown-menu(aria-labelledby='navbarDropdownMale')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+        li.nav-item.dropdown
+          a#navbarDropdownFemale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            | Для женщин
+          .dropdown-menu(aria-labelledby='navbarDropdownFemale')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+        li.nav-item.dropdown
+          a#navbarDropdownKids.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            | Для детей
+          .dropdown-menu(aria-labelledby='navbarDropdownKids')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
+      a.col-4.nav-item.d-flex.justify-content-center.align-items-center.navbar-brand.mr-0(href='#')
+        img(src='./img/logo.svg')
+        | THE LOOP
+      .col-2.d-flex
+        li.nav-item
+          a.nav-link(href='#') Оплата
+        li.nav-item
+          a.nav-link(href='#') Доставка
+      .col-2.basket
+        li.nav-item
+          a.nav-link(href='#')
+            img(src="./img/basket.svg", alt="")
+            .counter 5
+
+      
+      
+   

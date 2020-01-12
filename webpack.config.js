@@ -5,7 +5,7 @@ const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // const autoprefixer = require('autoprefixer');
 module.exports={
-	entry: './index.js',
+	entry: './src/index.js',
 	output: {
 		filename: 'main.js',
 		path: path.resolve(__dirname,'')
@@ -68,24 +68,13 @@ module.exports={
 				    	useRelativePath: true
 					}
 				}]
-	  		},
-	       	{
-				test: /\.(webm)$/,
-				use: [ {
-			  		loader: "file-loader",
-					options: {
-				    	name: "[name].[ext]",
-				    	outputPath: './video/',
-				    	useRelativePath: true
-					}
-				}]
 	  		}
   		]
 	},
 	plugins:[
 		new miniCssExtractPlugin({filename: "[name].css"}),
 		new HWP({
-			template: './index.pug',
+			template: './src/index.pug',
 			filename: 'index.html'
 		}),
 		new webpack.ProvidePlugin({
