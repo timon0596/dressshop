@@ -7,17 +7,19 @@ nav
 	font-size: 14px
 	line-height: 17px
 	letter-spacing: 0.03em
-	color: $black
 
 	.navbar-nav
-		a
+		.nav-item
 			display: -webkit-flex
 			display: -moz-flex
 			display: -ms-flex
 			display: -o-flex
 			display: flex
 			align-items: center
+		.nav-link
 			color: $black !important
+
+			
 	.navbar-brand
 		font-style: normal
 		font-weight: bold
@@ -58,3 +60,12 @@ nav
 					border: 7.5px solid transparent
 					border-left: 12px solid transparent
 					border-right: 12px solid $beige
+.carousel.slide
+  ol.carousel-indicators
+    li
+    	background: #CECECE
+    	border: none
+    	width: 40px
+    	height: 7px
+    li.active
+    	background: $beige
