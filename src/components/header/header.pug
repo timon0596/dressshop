@@ -1,83 +1,105 @@
-nav.navbar.navbar-expand-xl.navbar-light
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #navbarSupportedContent.collapse.navbar-collapse
-    .navbar-nav.w-100
-      .col-4.d-flex
-        .nav-item.dropdown
-          a#navbarDropdownMale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-            | Для мужчин
-          .dropdown-menu(aria-labelledby='navbarDropdownMale')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            a.dropdown-item(href='#') Something else here
-        .nav-item.dropdown
-          a#navbarDropdownFemale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-            | Для женщин
-          .dropdown-menu(aria-labelledby='navbarDropdownFemale')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            a.dropdown-item(href='#') Something else here
-        .nav-item.dropdown
-          a#navbarDropdownKids.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-            | Для детей
-          .dropdown-menu(aria-labelledby='navbarDropdownKids')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            a.dropdown-item(href='#') Something else here
-      a.col-4.nav-item.d-flex.justify-content-center.align-items-center.navbar-brand.mr-0(href='#')
-        img(src='./img/logo.svg')
-        | THE LOOP
-      .col-2.d-flex
-        a.nav-item.nav-link(href='#') Оплата
-        a.nav-item.nav-link(href='#') Доставка
-      .col-2.basket
-        a.nav-item.nav-link(href='#').d-flex.justify-content-end
-          img(src="./img/basket.svg", alt="")
-          .counter 5
-#carouselExampleIndicators.carousel.slide(data-ride='carousel')
-  ol.carousel-indicators
-    li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-    li(data-target='#carouselExampleIndicators' data-slide-to='1')
-    li(data-target='#carouselExampleIndicators' data-slide-to='2')
-    li(data-target='#carouselExampleIndicators' data-slide-to='3')
-  .carousel-inner
-    .carousel-item.active
-      .container
-        .row
-          .col-6
-            h3 Зимняя распродажа
-            h1 скидки до 90%
-            a.button смотреть модели
-          .col-6
-            img.d-block.w-100(src='./img/shoes.svg')
-    .carousel-item
-      .container
-        .row
-          .col-6
-            h3 Зимняя распродажа
-            h1 скидки до 90%
-            a.button смотреть модели
-          .col-6
-            img.d-block.w-100(src='./img/shoes.svg')
-    .carousel-item
-      .container
-        .row
-          .col-6
-            h3 Зимняя распродажа
-            h1 скидки до 90%
-            a.button смотреть модели
-          .col-6
-            img.d-block.w-100(src='./img/shoes.svg')
-    .carousel-item
-      .container
-        .row
-          .col-6
-            h3 Зимняя распродажа
-            h1 скидки до 90%
-            a.button смотреть модели
-          .col-6
-            img.d-block.w-100(src='./img/shoes.svg')
+.container
+  nav.navbar.navbar-expand-xl.navbar-light.px-0
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      .navbar-nav.w-100
+        .col-4.d-flex
+          .nav-item.dropdown
+            a#navbarDropdownMale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Для мужчин
+            .dropdown-menu(aria-labelledby='navbarDropdownMale')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              a.dropdown-item(href='#') Something else here
+          .nav-item.dropdown
+            a#navbarDropdownFemale.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Для женщин
+            .dropdown-menu(aria-labelledby='navbarDropdownFemale')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              a.dropdown-item(href='#') Something else here
+          .nav-item.dropdown
+            a#navbarDropdownKids.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Для детей
+            .dropdown-menu(aria-labelledby='navbarDropdownKids')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              a.dropdown-item(href='#') Something else here
+        a.col-4.nav-item.d-flex.justify-content-center.align-items-center.navbar-brand.mr-0(href='#')
+          img(src='./img/logo.svg')
+          h4 THE LOOP
+        .col-2.d-flex
+          a.nav-item.nav-link(href='#') Оплата
+          a.nav-item.nav-link(href='#') Доставка
+        .col-2.basket
+          a.nav-item.nav-link(href='#').d-flex.justify-content-end
+            img(src="./img/basket.svg", alt="")
+            .counter 5
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+      li(data-target='#carouselExampleIndicators' data-slide-to='1')
+      li(data-target='#carouselExampleIndicators' data-slide-to='2')
+      li(data-target='#carouselExampleIndicators' data-slide-to='3')
+    .carousel-inner
+      .carousel-item.active
+        .container
+          .row
+            .col-6
+              h3 Зимняя распродажа
+              h1 скидки до 90%
+              a.button смотреть модели
+            .col-6
+              .product
+                img.d-block.w-100(src='./img/shoes.svg')
+                .cost
+                  .prev_price 9900 &#x20bd;
+                  .current_price 1900 &#x20bd;
+      .carousel-item
+        .container
+          .row
+            .col-6
+              h3 Зимняя распродажа
+              h1 скидки до 90%
+              a.button смотреть модели
+            .col-6
+              .product
+                img.d-block.w-100(src='./img/shoes.svg')
+                .cost
+                  .prev_price 9900 &#x20bd;
+                  .current_price 1900 &#x20bd;
+      .carousel-item
+        .container
+          .row
+            .col-6
+              h3 Зимняя распродажа
+              h1 скидки до 90%
+              a.button смотреть модели
+            .col-6
+              .product
+                img.d-block.w-100(src='./img/shoes.svg')
+                .cost
+                  .prev_price 9900 &#x20bd;
+                  .current_price 1900 &#x20bd;
+      .carousel-item
+        .container
+          .row
+            .col-6
+              h3 Зимняя распродажа
+              h1 скидки до 90%
+              a.button смотреть модели
+            .col-6
+              .product
+                img.d-block.w-100(src='./img/shoes.svg')
+                .cost
+                  .prev_price 9900 &#x20bd;
+                  .current_price 1900 &#x20bd;
+.delivery
+  h3
+    span бесплатная доставка 
+    |от 3000&#x20bd;
+  p Сделайте заказ и получите подарок!
 
       
       

@@ -1,13 +1,13 @@
 header
 	background-color: $cream
-nav
+nav.navbar.navbar-expand-xl.navbar-light
+	margin: 0px -10px
 	background: none !important
 	font-style: normal
 	font-weight: 500
 	font-size: 14px
 	line-height: 17px
 	letter-spacing: 0.03em
-
 	.navbar-nav
 		.nav-item
 			display: -webkit-flex
@@ -18,8 +18,6 @@ nav
 			align-items: center
 		.nav-link
 			color: $black !important
-
-			
 	.navbar-brand
 		font-style: normal
 		font-weight: bold
@@ -61,11 +59,60 @@ nav
 					border-left: 12px solid transparent
 					border-right: 12px solid $beige
 .carousel.slide
-  ol.carousel-indicators
-    li
-    	background: #CECECE
-    	border: none
-    	width: 40px
-    	height: 7px
-    li.active
-    	background: $beige
+	margin-top: 130px
+	ol.carousel-indicators
+		li
+			background: #CECECE
+			border: none
+			width: 40px
+			height: 7px
+		li.active
+			background: $beige
+.carousel-indicators
+	margin-bottom: 70px
+.carousel-inner
+	padding-bottom: 200px
+.carousel-item
+	position: relative
+	
+	h1
+		margin-bottom: 55px
+	h3
+		margin-bottom: 35px
+		margin-top: 35px
+	.cost
+		position: absolute
+		top: 40px
+		right: 15px	
+	.current_price
+		font-weight: bold
+		font-size: 42px
+		line-height: 51px
+		text-align: right
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #D84033
+	.prev_price
+		font-weight: bold
+		font-size: 24px
+		line-height: 29px
+		text-align: right
+		letter-spacing: 0.05em
+		text-decoration-line: line-through
+		text-transform: uppercase
+		color: #000000
+.delivery
+	text-align: center
+	background: $black
+	color: white
+	padding: 80px 0px 70px
+	h3
+		margin-bottom: 23px
+		color: white
+		text-transform: uppercase
+		span
+			font-weight: bold
+	p
+		font-size: 21px
+		line-height: 26px
+		margin: 0px
