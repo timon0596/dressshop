@@ -39,3 +39,38 @@
 			margin-bottom: 25px
 			span
 				font-weight: normal
+.catalog
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	.catalog_row
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.catalog_item
+			font-size: 21px
+			line-height: 26px
+			letter-spacing: 0.03em
+			color: #000000
+	.catalog_row-1
+		.catalog_item
+			display: block
+			width: 25%
+			height: 236px
+			background: url('./img/dress2.svg')
+		.catalog_item:nth-child(odd)
+			background: url('./img/dress1.svg')
+	.catalog_row-2
+		.catalog_item
+			display: block
+			width: 25%
+			height: 236px
+			background: url('./img/dress1.svg')
+		.catalog_item:nth-child(odd)
+			background: url('./img/dress2.svg')
+
