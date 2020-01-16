@@ -1,7 +1,13 @@
+.production
+	text-align: center
+	h2
+		margin-top: 150px
+		margin-bottom: 100px
 .collection
 	display: grid
 	grid-template-columns: 1fr 1fr
 	background: $gray
+	width: 100%
 	&_male
 		display: -webkit-flex
 		display: -moz-flex
@@ -39,6 +45,9 @@
 			margin-bottom: 25px
 			span
 				font-weight: normal
+@media screen and (max-width: 780px)
+	.collection
+		grid-template-columns: 1fr
 .catalog
 	display: -webkit-flex
 	display: -moz-flex
@@ -52,25 +61,55 @@
 		display: -ms-flex
 		display: -o-flex
 		display: flex
+		justify-content: center
+		flex-wrap: wrap
 		.catalog_item
+			padding: 0px
 			font-size: 21px
 			line-height: 26px
 			letter-spacing: 0.03em
 			color: #000000
+			position: relative
+			img
+				width: 100%
+			.name
+				position: absolute
+				left: 30px
+				bottom: 25px
 	.catalog_row-1
-		.catalog_item
-			display: block
-			width: 25%
-			height: 236px
-			background: url('./img/dress2.svg')
-		.catalog_item:nth-child(odd)
-			background: url('./img/dress1.svg')
 	.catalog_row-2
-		.catalog_item
-			display: block
-			width: 25%
-			height: 236px
-			background: url('./img/dress1.svg')
-		.catalog_item:nth-child(odd)
-			background: url('./img/dress2.svg')
+.new_model
+	flex-wrap: wrap
+	.new_model__item
+		margin-bottom: 25px
+		position: relative
+		img
+			margin-top: 25px
+		svg
+			position: absolute
+			top: 0px
+			left: 0px
+			fill: none
+			width: 100%
+			height: 100%
+			line
+				stroke: $beige
+				stroke-width: 3px
+				stroke-linecap: round
+		.text
+			margin-top: 25px
+			font-size: 14px
+			line-height: 17px
+			text-align: center
+			color: #000000
+			font-weight: bold
+		p
+			margin: 0px
+			margin-top: 15px
+			font-weight: bold
+			font-size: 18px
+			line-height: 22px
+			color: $beige
+			margin-bottom: 25px	
+
 
