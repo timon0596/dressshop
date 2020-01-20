@@ -1,0 +1,54 @@
+section.discount
+	text-align: center
+	.discount_and_gifts
+		flex-wrap: wrap
+		padding: 70px 0px
+		background: $black
+		justify-content: center
+		h3
+			text-align: center
+			color: white
+			font-weight: bold
+			margin: 0
+		.subscription
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			margin-left: 60px
+			input
+				width: 255px
+				margin-right: 35px
+				background: $cream
+				height: 40px
+				border: none
+				padding-left: 20px
+				&::placeholder
+					font-size: 12px
+					line-height: 15px
+					letter-spacing: 0.02em
+					color: #8D8D8D
+			a.button.subscribe
+				width: 185px
+				height: 40px
+	h2
+		margin-top: 100px
+		margin-bottom: 100px
+@media (max-width: 992px)
+	section.discount
+		.discount_and_gifts
+			h3
+				margin-bottom: 20px
+			.subscription
+				margin: 0
+				input
+					margin-bottom: 20px
+@media (max-width: 768px)
+	section.discount
+		.discount_and_gifts
+			.subscription
+				input
+					margin-right: 0
